@@ -13,7 +13,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://auth-login-frontend.vercel.app/',
+    origin: 'https://auth-login-frontend.vercel.app',
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 }))
 app.use("/api/auth", authRoutes);
